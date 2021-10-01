@@ -1,29 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @user.phone %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @user.user_id %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="card" style="width: 20rem; height: 20rem;">
+  <div class="card-body" style="background-image: url('https://wallpaperaccess.com/full/449895.jpg');">
+    <h5 class="card-title"><%= @user.first_name %> <%= @user.last_name %></h5>
+    <p class="card-text"> <%= @user.email %> | <%= @user.phone %> | <%= @user.user_id %></p>
+    <br/><br/><br/><br/>
+    <a href="#" class="btn btn-success">See Stats</a>
+    <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-dark" %> 
+    <%= link_to 'Back', users_path, class:"btn btn-dark" %>
+  </div>
+</div>
