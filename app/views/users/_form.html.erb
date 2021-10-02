@@ -31,6 +31,10 @@
     <%= form.text_field :user_id, class:"form-control", placeholder:"User Name" %>
   </div>
 
+  <div class="field form-group">
+    <%= form.number_field :customer_id, id: :user_customer_id, class:"form-control", value:current_customer.id, type: :hidden%>
+  </div>
+
   <div class="actions">
     <%= form.submit class:"btn btn-secondary" %>
   </div>
