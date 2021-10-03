@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :information
   devise_for :customers
   resources :users
   get 'home/about'

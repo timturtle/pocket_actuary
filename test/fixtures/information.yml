@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  age: 1
+  gender: MyString
+  country: MyString
+  state: MyString
+  city: MyString
+  street: MyString
+  zipcode: MyString
+  income: 9.99
+  expenses: 9.99
+  assets: 9.99
+  liabilities: 9.99
+  dependents: MyString
+  health: MyString
+  activity_levels: MyString
+
+two:
+  age: 1
+  gender: MyString
+  country: MyString
+  state: MyString
+  city: MyString
+  street: MyString
+  zipcode: MyString
+  income: 9.99
+  expenses: 9.99
+  assets: 9.99
+  liabilities: 9.99
+  dependents: MyString
+  health: MyString
+  activity_levels: MyString

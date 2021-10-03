@@ -1,0 +1,87 @@
+<%= form_with(model: information) do |form| %>
+  <% if information.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(information.errors.count, "error") %> prohibited this information from being saved:</h2>
+
+      <ul>
+        <% information.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street %>
+    <%= form.text_field :street %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zipcode %>
+    <%= form.text_field :zipcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :income %>
+    <%= form.text_field :income %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expenses %>
+    <%= form.text_field :expenses %>
+  </div>
+
+  <div class="field">
+    <%= form.label :assets %>
+    <%= form.text_field :assets %>
+  </div>
+
+  <div class="field">
+    <%= form.label :liabilities %>
+    <%= form.text_field :liabilities %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dependents %>
+    <%= form.text_field :dependents %>
+  </div>
+
+  <div class="field">
+    <%= form.label :health %>
+    <%= form.text_field :health %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_levels %>
+    <%= form.text_field :activity_levels %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

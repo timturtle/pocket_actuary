@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Information</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Country</th>
+      <th>State</th>
+      <th>City</th>
+      <th>Street</th>
+      <th>Zipcode</th>
+      <th>Income</th>
+      <th>Expenses</th>
+      <th>Assets</th>
+      <th>Liabilities</th>
+      <th>Dependents</th>
+      <th>Health</th>
+      <th>Activity levels</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @information.each do |information| %>
+      <tr>
+        <td><%= information.age %></td>
+        <td><%= information.gender %></td>
+        <td><%= information.country %></td>
+        <td><%= information.state %></td>
+        <td><%= information.city %></td>
+        <td><%= information.street %></td>
+        <td><%= information.zipcode %></td>
+        <td><%= information.income %></td>
+        <td><%= information.expenses %></td>
+        <td><%= information.assets %></td>
+        <td><%= information.liabilities %></td>
+        <td><%= information.dependents %></td>
+        <td><%= information.health %></td>
+        <td><%= information.activity_levels %></td>
+        <td><%= link_to 'Show', information %></td>
+        <td><%= link_to 'Edit', edit_information_path(information) %></td>
+        <td><%= link_to 'Destroy', information, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Information', new_information_path %>
