@@ -81,6 +81,10 @@
     <%= form.text_field :activity_levels %>
   </div>
 
+  <div class="field form-group">
+    <%= form.number_field :user_id, id: :information_user_id, class:"form-control", value:current_customer.id, type: :hidden%>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
